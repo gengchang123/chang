@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body,
+html{
+    background-color: #F1F1F3;
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/font_1846907_y0dm4yx7zz/iconfont.eot');
+    src: url('../font/font_1846907_y0dm4yx7zz/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../font/font_1846907_y0dm4yx7zz/iconfont.woff2') format('woff2'),
+        url('../font/font_1846907_y0dm4yx7zz/iconfont.woff') format('woff'),
+        url('../font/font_1846907_y0dm4yx7zz/iconfont.ttf') format('truetype'),
+        url('../font/font_1846907_y0dm4yx7zz/iconfont.svg#iconfont') format('svg');
+  }
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+.header{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.header img{
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+.header h3{
+    margin-left: 30px;
+    line-height: 40px;
+}
+.container{
+    margin: 50px auto;
+    display: flex;
+    width: 600px;
+    height: 400px;
+    /* background-color: pink; */
+}
+.container .login-left{
+    width: 300px;
+
+}
+.login-left img{
+    width: 100%;
+    height: 100%;
+}
+.login-right{
+    width: 300px;
+    padding: 20px 0 0 20px;   
+    box-sizing: border-box;
+    padding-right: 40px;
+    background-color: #FFFEFF;
+}
+input{
+    outline: none;
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 20px;
+    border: 0;
+    padding-bottom:6px ;
+    /* border-bottom: 1px solid #111; */
+}
+.login-hd{
+    position: relative;
+    border-bottom: 1px solid #111;
+    margin-top: 20px;
+}
+.tubiao{
+    position: absolute;
+    top:10px ;
+    z-index: 1;
+    cursor: pointer;
+}
+.btn{
+    width: 150px;
+    height: 40px;
+    border: 0;
+    margin-top: 20px ;
+    border-radius: 8px;
+    background-color: #409EFE;
+}
+.login-btn{
+    text-align: center;
+}
+.login-footer{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+align-items: center;
+}
+.login-footer input{
+    vertical-align:middle; 
+    margin: 0;    
+}
+.message{
+    color: red;
+}

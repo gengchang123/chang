@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: pink;
+        }
+    </style>
+    <script src="jquery.min.js"></script>
+</head>
+<body>
+    <button>显示</button>
+    <button>隐藏</button>
+    <button>切换</button>
+    <div></div>
+    <script>
+        $(function(){
+            $('button').eq(0).click(function(){
+                $('div').show()
+            })
+            $('button').eq(1).click(function(){
+                $('div').hide()
+            })
+            $('button').eq(2).click(function(){
+                $('div').toggle()
+            })
+        })
+    </script>
+</body>
+</html>

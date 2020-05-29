@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <input value="" class="inp">
+      <button>点击</button>
+      <p>输入错误</p>
+    </div>
+    <script>
+        var inp = document.querySelector('.inp')
+        var btn=document.querySelector('button')
+        var p = document.querySelector('p')
+        btn.onclick=function(){
+            console.log(123);
+            
+        }
+        inp.onblur = function () {
+            console.log(inp.value);
+            
+            if (inp.value.length > 6 && inp.value.length < 15) {
+                console.log('123');
+
+                p.style.display = 'none'
+            }
+        }
+
+    </script>
+  
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+//    let arrayLike = {
+//     '1': 'a',
+//     '2': 'b',
+//     '3': 'c',
+//     length: 3
+// }; 
+// //转成数组
+// let arr2 = Array.from(arrayLike);
+//     console.log(arr2);
+    
+    let arrayLike = { 
+     "0": 1,
+     "1": 2,
+     "length": 2
+ }
+ let newAry = Array.from(arrayLike, item => item *3)
+//  console.log(newAry);
+ const body=
+ `
+      <div>${newAry}</div>
+ `
+ console.log(body);
+ 
+    </script>
+</body>
+</html>
